@@ -1,0 +1,615 @@
+/* Global styles */
+body {
+  font-family: 'Calibri', sans-serif;
+  color: #00231C;
+  /* Detritus Green */
+  background-color: #FCFCFC;
+  /* Endurance White */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #17253F;
+  /* Brisk Blue */
+  color: #FCFCFC;
+  /* White */
+  padding: 10px 30px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav a {
+  color: #FCFCFC;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #DEF479;
+  /* Lime Lift */
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('img/Client2_GroupPilates.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Adjust the opacity level to fade the image */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero h1 {
+  font-size: 50px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #DEF479;
+  /* Lime Lift */
+  color: #00231C;
+  /* Detritus Green */
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #91B9D2;
+  /* Aqua Pulse */
+}
+
+/* Highlights section */
+
+.container {
+  padding: 100px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  height: auto;
+  margin: 0 auto;
+  width: 800px;
+  color: #00231C;
+}
+
+.location-map {
+  float:left;
+  width:400px;
+  margin: 20px;
+}
+
+/* Highlights section */
+.highlights {
+  padding: 60px 60px;
+  /* Added extra padding for vertical expansion */
+  background-color: #17253F;
+  /* Aqua Pulse */
+  color: #00231C;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 30px;
+  /* Increased font size for better emphasis */
+  color: #fcfcfc;
+  /* Intensity Indigo */
+  margin-bottom: 60px;
+  /* Increased margin to create space below the heading */
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Keeps three items per row */
+  gap: 20px;
+  /* Increased gap for better spacing between items */
+  margin-top: 30px;
+}
+
+.highlight-item {
+  text-align: center;
+  padding: 20px;
+  /* Added padding inside each highlight item for more space */
+}
+
+.highlight-item img {
+  width: 200px;
+  /* Increased image size */
+  height: 100px;
+  border-radius: 15px;
+  /* Added border radius for rounded corners */
+}
+
+.highlight-item h3 {
+  margin-top: 15px;
+  /* Adjusted margin for proper spacing */
+  font-size: 20px;
+  /* Increased font size for better readability */
+  color: #fcfcfc;
+  /* Detritus Green */
+}
+
+
+
+/* Shopping Promos section */
+.shopping-promos {
+  padding: 30px;
+  background-color: #FCFCFC;
+  /* Endurance White */
+  color: #00231C;
+  text-align: center;
+}
+
+.shopping-promos h2 {
+  font-size: 25px;
+  color: #2343BD;
+  /* Intensity Indigo */
+}
+
+.shopping-promos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shopping-promos li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Products & Categories section */
+
+.products {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #FCFCFC;
+  /* Endurance White */
+  color: #00231C;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+/* Footer styles */
+/* Footer styles */
+footer {
+  background-color: #17253F;
+  /* Brisk Blue */
+  color: #FCFCFC;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #DEF479;
+  /* Lime Lift */
+  border: none;
+  color: #00231C;
+  /* Detritus Green */
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #91B9D2;
+  /* Aqua Pulse */
+}
+
+.footer-links a,
+.footer-column a {
+  color: #DEF479;
+  /* Lime Lift */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover,
+.footer-column a:hover {
+  color: #91B9D2;
+  /* Aqua Pulse */
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #FCFCFC;
+  /* Endurance White */
+  color: #00231C;
+  /* Detritus Green */
+}
+
+.contact-form-section h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #2343BD;
+  /* Intensity Indigo */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #00231C;
+  /* Detritus Green */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #DEF479;
+  /* Lime Lift */
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #DEF479;
+  /* Lime Lift */
+  color: #00231C;
+  /* Detritus Green */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #91B9D2;
+  /* Aqua Pulse */
+}
+
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 100px 20px;
+    background-color: #FCFCFC; /* Endurance White */
+    text-align: center;
+    color: #00231C; /* Detritus Green */
+}
+
+.testimonials-section h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #00231c; /* Intensity Indigo */
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns Layout */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background-color: #91B9D2; /* Aqua Pulse */
+    padding: 30px;
+    border-radius: 10px;
+    color: #FCFCFC;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #DEF479; /* Lime Lift */
+}
+
+.review-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #DEF479;
+  padding: 2px;
+}
+
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cart-section {
+    margin-bottom: 30px;
+}
+
+.view-cart-button {
+    background-color: #DEF479; /* Lime Lift */
+    color: #00231C; /* Detritus Green */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top:40px;
+}
+
+.view-cart-button:hover {
+    background-color: #91B9D2; /* Aqua Pulse */
+}
+
+/* Table Styling */
+.item-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.item-table th, .item-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-table th {
+    background-color: #17253F; /* Brisk Blue */
+    color: #FCFCFC;
+}
+
+.item-table td img {
+    border-radius: 10px;
+}
+
+.add-to-cart-button {
+    background-color: #DEF479; /* Lime Lift */
+    color: #00231C; /* Detritus Green */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #91B9D2; /* Aqua Pulse */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #17253F; /* Brisk Blue */
+    color: #FCFCFC;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FCFCFC; /* Endurance White */
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.cart-actions {
+    margin-top: 20px;
+}
+
+.cart-actions button {
+    background-color: #DEF479; /* Lime Lift */
+    color: #00231C; /* Detritus Green */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.cart-actions button:hover {
+    background-color: #91B9D2; /* Aqua Pulse */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00231C; /* Detritus Green */
+}
+
+/* Styling for the cart items in the modal */
+.modal-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-content li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #91B9D2; /* Aqua Pulse */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #FCFCFC; /* White */
+}
+
+.modal-content li input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.modal-content li input[type="number"]:focus {
+    border-color: #DEF479; /* Lime Lift */
+    outline: none;
+}
+
+.remove-item-button {
+    background-color: #FF6B6B; /* Red for remove button */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-item-button:hover {
+    background-color: #FF4C4C; /* Darker red on hover */
+}
